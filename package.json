@@ -1,0 +1,52 @@
+{
+  "name": "@react4tv/smart-tv-platform",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Util detect platform SmartTV",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "prepack": "yarn build",
+    "prebuild": "yarn clean",
+    "build": "rollup -c",
+    "clean": "rimraf lib @react4tv/smart-tv-platform-*.tgz",
+    "watch": "rollup -cw"
+  },
+  "keywords": [
+    "tv",
+    "smarttv",
+    "smart-tv",
+    "tizen",
+    "webos",
+    "samsung",
+    "lg"
+  ],
+  "author": "Nguyễn Sỹ Thành Công <thanhcongns94@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.49.0",
+    "rollup-obfuscator": "^3.0.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-4-smart-tv/smart-tv-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/react-4-smart-tv/smart-tv-platform/issues"
+  },
+  "homepage": "https://github.com/react-4-smart-tv/smart-tv-platform#readme"
+}
